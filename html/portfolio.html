@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio - MSA</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta content='Flat administration template for Twitter Bootstrap. Twitter Bootstrap 3 template with Ruby on Rails support.' name='description'>
+    <link href='assets/images/meta_icons/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='assets/images/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+    <link href='assets/images/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='assets/images/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+    <!-- / START - page related stylesheets [optional] -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200' rel='stylesheet' type='text/css'>
+    <link href="assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/fullcalendar/fullcalendar.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/common/bootstrap-wysihtml5.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/plugins/slider_nav/slidernav.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- / END - page related stylesheets [optional] -->
+    <!-- / bootstrap [required] -->
+    <link href="assets/stylesheets/bootstrap/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- / theme file [required] -->
+    <link href="assets/stylesheets/dark-theme.css" media="all" id="color-settings-body-color" rel="stylesheet" type="text/css" />
+    <!-- / coloring file [optional] (if you are going to use custom contrast color) -->
+    <link href="assets/stylesheets/theme-colors.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- / demo file [not required!] 
+    <link href="assets/stylesheets/demo.css" media="all" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="assets/javascripts/ie/html5shiv.js" type="text/javascript"></script>
+      <script src="assets/javascripts/ie/respond.min.js" type="text/javascript"></script>
+    <!--[endif]-->
+  </head>
+  <body class='contrast-dark'>
+    <header>
+      <nav class='navbar navbar-default'>
+        <a class='navbar-brand' href='index.html'>
+          <img width="120" height="30" class="logo" alt="Flatty" src="assets/images/logo.png" />
+          <img width="21" height="21" class="logo-xs" alt="Flatty" src="assets/images/logo_xs.svg" />
+        </a>
+        <a class='toggle-nav btn pull-left' href='#'>
+          <i class='icon-reorder'></i>
+        </a>
+        <ul class='nav'>
+          <li class='dropdown dark user-menu'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <img width="23" height="23" alt="Mila Kunis" src="assets/images/avatar.jpg" />
+              <span class='user-name'>Mila Kunis</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-cog'></i>
+                  Settings
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='sign_in.html'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search..." autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form>
+      </nav>
+    </header>
+    <div id='wrapper'>
+      <div id='main-nav-bg'></div>
+      <nav id='main-nav'>
+        <div class='navigation'>
+          <div class='search'>
+            <form action='search_results.html' method='get'>
+              <div class='search-wrapper'>
+                <input value="" class="search-query form-control" placeholder="Search..." autocomplete="off" name="q" type="text" />
+                <button class='btn btn-link icon-search' name='button' type='submit'></button>
+              </div>
+            </form>
+          </div>
+          <ul class='nav nav-stacked'>
+            <li class=''>
+              <a href='portfolio.html'>
+                <i class='icon-dashboard'></i>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class=''>
+             <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+              <span>My Map</span>
+              <i class='icon-angle-down angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='map_overview.html'>
+                    <i class='icon-home'></i>
+                    <span>Map Overview</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='clustermap.html'>
+                    <i class='icon-globe'></i>
+                    <span>Cluster Map</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='focusindex.html'>
+                    <i class='icon-list'></i>
+                    <span>Cluster Focus Index</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='valence.html'>
+                    <i class='icon-bar-chart'></i>
+                    <span>Valence Charts</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='report.html'>
+                    <i class='icon-file-text-alt'></i>
+                    <span>Reports</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='spreadsheet.html'>
+                    <i class='icon-table'></i>
+                    <span>Get Spreadsheet</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=''>
+              <a href='buttons_and_icons.html'>
+                <i class='icon-shopping-cart'></i>
+                <span>My Cart</span>
+              </a>
+            </li>
+            <li>
+              <a class='dropdown-collapse ' href='#'>
+                <i class='icon-user'></i>
+                <span>My Profile</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='#'>
+                    <i class='icon-briefcase'></i>
+                    <span>Account Management</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='#'>
+                    <i class='icon-key'></i>
+                    <span>Change Password</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='#'>
+                    <i class='icon-off'></i>
+                    <span>Log-out</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id='content'>
+        <div class='container' style="background-color:black;position:absolute;z-index:1">
+          <div class='row' id='content-wrapper'>
+            <div class='col-xs-12'>
+              
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='page-header' style="background-color:gray">
+                    <h1 class='pull-left'>
+                      <i class='icon-bar-chart'></i>
+                      <span>My Collection</span>
+                    </h1>
+                    <div class='pull-right'>
+                      <button class="btn btn-sm">
+                      <i class="icon-plus"></i> add a portfolio
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class="tabbable">
+                          <ul class="nav nav-tabs">
+                            <li class="active">
+                              <a data-toggle="tab" href="#tab1">
+                                Portfolio 1
+                              </a>
+                            </li>
+                            <li>
+                              <a data-toggle="tab" href="#tab2">
+                              	Portfolio 2
+                              </a>
+                            </li>
+                            <li>
+                              <a data-toggle="tab" href="#tab3">
+                              	Portfolio 3
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                              <div class='box box-transparent'>
+                    <div class="box-content">
+                	<div class="col-sm-12">
+                  	<div class="row" align="center">
+                        <div class="btn-group" data-toggle="buttons">
+                        <button class="btn btn-md active" href="#grid" data-toggle="tab">
+							<input type="radio" name="options" id="">
+							<i class="icon-th"></i>
+						</button>
+						<button class="btn btn-md" href="#list" data-toggle="tab">
+							<input type="radio" name="options" id="">
+							<i class="icon-list-ul"></i>
+						</button>
+					</div>
+                	<hr class="hr-normal">
+                	</div>
+                    <div class="tab-content" style="max-height:400px; overflow-y:scroll; overflow-x:hidden">
+                     <div class="tab-pane active" id="grid">
+                        <div class="row">
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-twitter">Type: <i class="icon-twitter"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<span class="text-orange has-popover" data-content="Eaque officia voluptas necessitatibus unde ipsam molestiae maiores velit est" data-placement="right" data-title="Map Title" data-original-title="" title="">more...</span></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-facebook">Type: <i class="icon-facebook"></i></span>  
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap4.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-youtube">Type: <i class="icon-youtube"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-instagram">Type: <i class="icon-instagram"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-tumblr">Type: <i class="icon-tumblr"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-flickr">Type: <i class="icon-flickr"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap4.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-googleplus">Type: <i class="icon-google-plus"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-linkedin">Type: <i class="icon-linkedin"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-pinterest">Type: <i class="icon-pinterest"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        </div>
+                        <div class="row" align="center">
+                        	<button class="btn btn-sm">load more</button>
+                        </div>
+                	 </div>
+                	 <div class="tab-pane" id="list">
+                        <div class="row">
+                        	<div class="col-sm-12">
+                        		<table class="table table-hover table-condensed">
+                            		<thead>
+                              			<tr>
+                                			<th>Type</th>
+                                			<th width="40%">Title & Summary</th>
+                                			<th>Date</th>
+                                			<th>Tools</th>
+                                			<th>Nodes</th>
+                                			<th>Groups</th>
+                                			<th>Clusters</th>
+                                		</tr>
+                                	</thead>
+                                	<tbody>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-facebook"><i class="icon-facebook"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      						</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                	</tbody>
+                          		</table>
+                        	</div>
+                        </div>
+                	 </div>
+                  </div>
+                  	
+                </div>
+                </div>
+                  </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                              <div class='box box-transparent'>
+                    <div class="box-content">
+                	<div class="col-sm-12">
+                  	<div class="row" align="center">
+                        <div class="btn-group" data-toggle="buttons">
+                        <button class="btn btn-md active" href="#grid2" data-toggle="tab">
+							<input type="radio" name="options" id="">
+							<i class="icon-th"></i>
+						</button>
+						<button class="btn btn-md" href="#list2" data-toggle="tab">
+							<input type="radio" name="options" id="">
+							<i class="icon-list-ul"></i>
+						</button>
+					</div>
+                	<hr class="hr-normal">
+                	</div>
+                    <div class="tab-content" style="max-height:400px; overflow-y:scroll; overflow-x:hidden">
+                     <div class="tab-pane active" id="grid2">
+                        <div class="row">
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap4.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-googleplus">Type: <i class="icon-google-plus"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-linkedin">Type: <i class="icon-linkedin"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-pinterest">Type: <i class="icon-pinterest"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-twitter">Type: <i class="icon-twitter"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-facebook">Type: <i class="icon-facebook"></i></span>  
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-tumblr">Type: <i class="icon-tumblr"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-flickr">Type: <i class="icon-flickr"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap4.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-youtube">Type: <i class="icon-youtube"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-instagram">Type: <i class="icon-instagram"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	
+                        </div>
+                        <div class="row" align="center">
+                        	<button class="btn btn-sm">load more</button>
+                        </div>
+                	 </div>
+                	 <div class="tab-pane" id="list2">
+                        <div class="row">
+                        	<div class="col-sm-12">
+                        		<table class="table table-hover table-condensed">
+                            		<thead>
+                              			<tr>
+                                			<th>Type</th>
+                                			<th width="40%">Title & Summary</th>
+                                			<th>Date</th>
+                                			<th>Tools</th>
+                                			<th>Nodes</th>
+                                			<th>Groups</th>
+                                			<th>Clusters</th>
+                                		</tr>
+                                	</thead>
+                                	<tbody>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-facebook"><i class="icon-facebook"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      						</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                	</tbody>
+                          		</table>
+                        	</div>
+                        </div>
+                	 </div>
+                  </div>
+                  	
+                </div>
+                </div>
+                  </div>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                              <div class='box box-transparent'>
+                    <div class="box-content">
+                	<div class="col-sm-12">
+                  	<div class="row" align="center">
+                        <div class="btn-group" data-toggle="buttons">
+                        <button class="btn btn-md active" href="#grid3" data-toggle="tab">
+							<input type="radio" name="options" id="">
+							<i class="icon-th"></i>
+						</button>
+						<button class="btn btn-md" href="#list3" data-toggle="tab">
+							<input type="radio" name="options" id="">
+							<i class="icon-list-ul"></i>
+						</button>
+					</div>
+                	<hr class="hr-normal">
+                	</div>
+                    <div class="tab-content" style="max-height:400px; overflow-y:scroll; overflow-x:hidden">
+                     <div class="tab-pane active" id="grid3">
+                        <div class="row">
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-pinterest">Type: <i class="icon-pinterest"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-twitter">Type: <i class="icon-twitter"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-facebook">Type: <i class="icon-facebook"></i></span>  
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-tumblr">Type: <i class="icon-tumblr"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-flickr">Type: <i class="icon-flickr"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap4.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-googleplus">Type: <i class="icon-google-plus"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-linkedin">Type: <i class="icon-linkedin"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap4.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-youtube">Type: <i class="icon-youtube"></i></span> 
+                      								<span class="badge">CM</span>
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	<div class="col-sm-6">
+                        		<div class="box box-bordered muted-border box-nomargin">
+                    				<div class="box-content box-padding">
+                      					<div class="row">
+                      						<div class="col-sm-4">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap5.png">
+                      						</div>
+                      						<div class="col-sm-8">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<h5>
+                      								<span class="badge badge-instagram">Type: <i class="icon-instagram"></i></span> 
+                      								<span class="badge">CM</span> 
+                      								<span class="badge">VC</span> 
+                      								<span class="badge">CFI</span>
+                      							</h5>
+                      							<h5>
+                      								<a href="#" class="text-orange">15,000</a> nodes,
+                      								<a href="#" class="text-orange">12</a> groups, 
+                      								<a href="#" class="text-orange">123</a> clusters
+                      							</h5>
+                      							<h5>01/01/2014</h5>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                      				
+                      				<!--<div class="box-toolbox box-toolbox-bottom">
+                        			<div class="pull-right">
+                         				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                          				<a class="btn">
+                            				<i class="icon-eye-open"></i>
+                          				</a>
+                        			</div>
+                      	</div>-->
+                    		</div>
+                  			</div>
+                        	</div>
+                        	
+                        </div>
+                        <div class="row" align="center">
+                        	<button class="btn btn-sm">load more</button>
+                        </div>
+                	 </div>
+                	 <div class="tab-pane" id="list3">
+                        <div class="row">
+                        	<div class="col-sm-12">
+                        		<table class="table table-hover table-condensed">
+                            		<thead>
+                              			<tr>
+                                			<th>Type</th>
+                                			<th width="40%">Title & Summary</th>
+                                			<th>Date</th>
+                                			<th>Tools</th>
+                                			<th>Nodes</th>
+                                			<th>Groups</th>
+                                			<th>Clusters</th>
+                                		</tr>
+                                	</thead>
+                                	<tbody>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-facebook"><i class="icon-facebook"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap3.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Federal Government
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      						</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Syria Twitter
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Journalists
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                		<tr>
+                                			<td>
+                                				<span class="badge badge-twitter"><i class="icon-twitter"></i></span>
+                                			</td>
+                                			<td>
+                                				<div class="row">
+                      						<div class="col-sm-3">
+                      							<img class="img-responsive" src="assets/images/portfolio/clustermap2.png">
+                      						</div>
+                      						<div class="col-sm-9">
+                      							<h3>
+                      								Eco_Auto
+                      							</h3>
+                      							<hr class="hr-normal">
+                      							<h6>
+                      								<i>
+                      								Lorem ipsum dolor sit amet, modus utroque patrioque pro et, in zril maiorum voluptatibus nec. Ad augue qualisque mel, pri vidit ferri in. 
+                      								<a href="#" class="text-orange">more...</a></i> 
+                      							</h6>
+                      						</div>
+                      					</div>
+                                			</td>
+                                			<td>
+                                				<p>01-01-2014</p>
+                                				<p>12-31-2015</p>
+                                			</td>
+                                			<td>
+                                				<span class="badge">CM</span>
+                      							<span class="badge">CFI</span>
+                      							<span class="badge">VC</span>                                			</td>
+                                			<td>15,000</td>
+                                			<td>12</td>
+                                			<td>120</td>
+                                		</tr>
+                                	</tbody>
+                          		</table>
+                        	</div>
+                        </div>
+                	 </div>
+                  </div>
+                  	
+                </div>
+                </div>
+                  </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- / jquery [required] -->
+    <script src="assets/javascripts/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- / jquery mobile (for touch events) -->
+    <script src="assets/javascripts/jquery/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <!-- / jquery migrate (for compatibility with new jquery) [required] -->
+    <script src="assets/javascripts/jquery/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- / jquery ui -->
+    <script src="assets/javascripts/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- / jQuery UI Touch Punch -->
+    <script src="assets/javascripts/plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <!-- / bootstrap [required] -->
+    <script src="assets/javascripts/bootstrap/bootstrap.js" type="text/javascript"></script>
+    <!-- / modernizr -->
+    <script src="assets/javascripts/plugins/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <!-- / retina -->
+    <script src="assets/javascripts/plugins/retina/retina.js" type="text/javascript"></script>
+    <!-- / theme file [required] -->
+    <script src="assets/javascripts/theme.js" type="text/javascript"></script>
+    <!-- / demo file [not required!] -->
+    <script src="assets/javascripts/demo.js" type="text/javascript"></script>
+    <!-- / START - page related files and scripts [optional] -->
+    <script src="assets/javascripts/plugins/slider_nav/slidernav-min.js" type="text/javascript"></script>
+    <script>
+      $('#slider').sliderNav()
+    </script>
+    <script src="assets/javascripts/plugins/flot/excanvas.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/flot/flot.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/flot/flot.resize.js" type="text/javascript"></script>
+    <script>
+      var data, dataset, gd, options, previousLabel, previousPoint, showTooltip, ticks;
+      var blue, data, datareal, getRandomData, green, i, newOrders, options, orange, orders, placeholder, plot, purple, randNumber, randSmallerNumber, red, series, totalPoints, update, updateInterval;
+      var red = "#f34541";
+      var orange = "#f8a326";
+      var blue = "#00acec";
+      var purple = "#9564e2";
+      var green = "#49bf67";
+      randNumber = function() {
+        return ((Math.floor(Math.random() * (1 + 50 - 20))) + 20) * 800;
+      };
+      randSmallerNumber = function() {
+        return ((Math.floor(Math.random() * (1 + 40 - 20))) + 10) * 200;
+      };
+      if ($("#stats-chart1").length !== 0) {
+        orders = [[1, randNumber() - 10], [2, randNumber() - 10], [3, randNumber() - 10], [4, randNumber()], [5, randNumber()], [6, 4 + randNumber()], [7, 5 + randNumber()], [8, 6 + randNumber()], [9, 6 + randNumber()], [10, 8 + randNumber()], [11, 9 + randNumber()], [12, 10 + randNumber()], [13, 11 + randNumber()], [14, 12 + randNumber()], [15, 13 + randNumber()], [16, 14 + randNumber()], [17, 15 + randNumber()], [18, 15 + randNumber()], [19, 16 + randNumber()], [20, 17 + randNumber()], [21, 18 + randNumber()], [22, 19 + randNumber()], [23, 20 + randNumber()], [24, 21 + randNumber()], [25, 14 + randNumber()], [26, 24 + randNumber()], [27, 25 + randNumber()], [28, 26 + randNumber()], [29, 27 + randNumber()], [30, 31 + randNumber()]];
+        newOrders = [[1, randSmallerNumber() - 10], [2, randSmallerNumber() - 10], [3, randSmallerNumber() - 10], [4, randSmallerNumber()], [5, randSmallerNumber()], [6, 4 + randSmallerNumber()], [7, 5 + randSmallerNumber()], [8, 6 + randSmallerNumber()], [9, 6 + randSmallerNumber()], [10, 8 + randSmallerNumber()], [11, 9 + randSmallerNumber()], [12, 10 + randSmallerNumber()], [13, 11 + randSmallerNumber()], [14, 12 + randSmallerNumber()], [15, 13 + randSmallerNumber()], [16, 14 + randSmallerNumber()], [17, 15 + randSmallerNumber()], [18, 15 + randSmallerNumber()], [19, 16 + randSmallerNumber()], [20, 17 + randSmallerNumber()], [21, 18 + randSmallerNumber()], [22, 19 + randSmallerNumber()], [23, 20 + randSmallerNumber()], [24, 21 + randSmallerNumber()], [25, 14 + randSmallerNumber()], [26, 24 + randSmallerNumber()], [27, 25 + randSmallerNumber()], [28, 26 + randSmallerNumber()], [29, 27 + randSmallerNumber()], [30, 31 + randSmallerNumber()]];
+        plot = $.plot($("#stats-chart1"), [
+          {
+            data: orders,
+            label: "Orders"
+          }, {
+            data: newOrders,
+            label: "New rders"
+          }
+        ], {
+          series: {
+            lines: {
+              show: true,
+              lineWidth: 3
+            },
+            shadowSize: 0
+          },
+          legend: {
+            show: false
+          },
+          grid: {
+            clickable: true,
+            hoverable: true,
+            borderWidth: 0,
+            tickColor: "#f4f7f9"
+          },
+          colors: ["#00acec", "#f8a326"]
+        });
+      }
+      if ($("#stats-chart2").length !== 0) {
+        orders = [[1, randNumber() - 5], [2, randNumber() - 6], [3, randNumber() - 10], [4, randNumber()], [5, randNumber()], [6, 4 + randNumber()], [7, 10 + randNumber()], [8, 12 + randNumber()], [9, 6 + randNumber()], [10, 8 + randNumber()], [11, 9 + randNumber()], [12, 10 + randNumber()], [13, 11 + randNumber()], [14, 12 + randNumber()], [15, 3 + randNumber()], [16, 14 + randNumber()], [17, 14 + randNumber()], [18, 15 + randNumber()], [19, 16 + randNumber()], [20, 17 + randNumber()], [21, 18 + randNumber()], [22, 19 + randNumber()], [23, 20 + randNumber()], [24, 21 + randNumber()], [25, 14 + randNumber()], [26, 24 + randNumber()], [27, 25 + randNumber()], [28, 26 + randNumber()], [29, 27 + randNumber()], [30, 31 + randNumber()]];
+        newOrders = [[1, randSmallerNumber() - 10], [2, randSmallerNumber() - 10], [3, randSmallerNumber() - 10], [4, randSmallerNumber()], [5, randSmallerNumber()], [6, 4 + randSmallerNumber()], [7, 5 + randSmallerNumber()], [8, 6 + randSmallerNumber()], [9, 6 + randSmallerNumber()], [10, 8 + randSmallerNumber()], [11, 9 + randSmallerNumber()], [12, 10 + randSmallerNumber()], [13, 11 + randSmallerNumber()], [14, 12 + randSmallerNumber()], [15, 13 + randSmallerNumber()], [16, 14 + randSmallerNumber()], [17, 15 + randSmallerNumber()], [18, 15 + randSmallerNumber()], [19, 16 + randSmallerNumber()], [20, 17 + randSmallerNumber()], [21, 18 + randSmallerNumber()], [22, 19 + randSmallerNumber()], [23, 20 + randSmallerNumber()], [24, 21 + randSmallerNumber()], [25, 14 + randSmallerNumber()], [26, 24 + randSmallerNumber()], [27, 25 + randSmallerNumber()], [28, 26 + randSmallerNumber()], [29, 27 + randSmallerNumber()], [30, 31 + randSmallerNumber()]];
+        plot = $.plot($("#stats-chart2"), [
+          {
+            data: orders,
+            label: "Orders"
+          }, {
+            data: newOrders,
+            label: "New orders"
+          }
+        ], {
+          series: {
+            lines: {
+              show: true,
+              lineWidth: 3
+            },
+            shadowSize: 0
+          },
+          legend: {
+            show: false
+          },
+          grid: {
+            clickable: true,
+            hoverable: true,
+            borderWidth: 0,
+            tickColor: "#f4f7f9"
+          },
+          colors: ["#f34541", "#49bf67"]
+        });
+        $("#stats-chart2").bind("plotclick", function(event, pos, item) {
+          if (item) {
+            return alert("Yeah! You just clicked on point " + item.dataIndex + " in " + item.series.label + ".");
+          }
+        });
+      }
+    </script>
+    <script src="assets/javascripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/moment.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/timeago/jquery.timeago.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/wysihtml5.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/common/bootstrap-wysihtml5.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+    <script>
+      (function() {
+        var cal, calendarDate, d, m, y;
+      
+        this.setDraggableEvents = function() {
+          return $("#events .external-event").each(function() {
+            var eventObject;
+            eventObject = {
+              title: $.trim($(this).text())
+            };
+            $(this).data("eventObject", eventObject);
+            return $(this).draggable({
+              zIndex: 999,
+              revert: true,
+              revertDuration: 0
+            });
+          });
+        };
+      
+        setDraggableEvents();
+      
+        calendarDate = new Date();
+      
+        d = calendarDate.getDate();
+      
+        m = calendarDate.getMonth();
+      
+        y = calendarDate.getFullYear();
+      
+        cal = $(".full-calendar-demo").fullCalendar({
+          header: {
+            center: "title",
+            left: "basicDay,basicWeek,month",
+            right: "prev,today,next"
+          },
+          buttonText: {
+            prev: "<span class=\"icon-chevron-left\"></span>",
+            next: "<span class=\"icon-chevron-right\"></span>",
+            today: "Today",
+            basicDay: "Day",
+            basicWeek: "Week",
+            month: "Month"
+          },
+          droppable: true,
+          editable: true,
+          selectable: true,
+          select: function(start, end, allDay) {
+            return bootbox.prompt("Event title", function(title) {
+              if (title !== null) {
+                cal.fullCalendar("renderEvent", {
+                  title: title,
+                  start: start,
+                  end: end,
+                  allDay: allDay
+                }, true);
+                return cal.fullCalendar('unselect');
+              }
+            });
+          },
+          eventClick: function(calEvent, jsEvent, view) {
+            return bootbox.dialog({
+              message: $("<form class='form'><label>Change event name</label></form><input id='new-event-title' class='form-control' type='text' value='" + calEvent.title + "' /> "),
+              buttons: {
+                "delete": {
+                  label: "<i class='icon-trash'></i> Delete Event",
+                  className: "pull-left",
+                  callback: function() {
+                    return cal.fullCalendar("removeEvents", function(ev) {
+                      return ev._id === calEvent._id;
+                    });
+                  }
+                },
+                success: {
+                  label: "<i class='icon-save'></i> Save",
+                  className: "btn-success",
+                  callback: function() {
+                    calEvent.title = $("#new-event-title").val();
+                    return cal.fullCalendar('updateEvent', calEvent);
+                  }
+                }
+              }
+            });
+          },
+          drop: function(date, allDay) {
+            var copiedEventObject, eventClass, originalEventObject;
+            originalEventObject = $(this).data("eventObject");
+            originalEventObject.id = Math.floor(Math.random() * 99999);
+            eventClass = $(this).attr('data-event-class');
+            console.log(originalEventObject);
+            copiedEventObject = $.extend({}, originalEventObject);
+            copiedEventObject.start = date;
+            copiedEventObject.allDay = allDay;
+            if (eventClass) {
+              copiedEventObject["className"] = [eventClass];
+            }
+            $(".full-calendar-demo").fullCalendar("renderEvent", copiedEventObject, true);
+            if ($("#calendar-remove-after-drop").is(":checked")) {
+              return $(this).remove();
+            }
+          },
+          events: [
+            {
+              id: "event1",
+              title: "All Day Event",
+              start: new Date(y, m, 1),
+              className: 'event-orange'
+            }, {
+              id: "event2",
+              title: "Long Event",
+              start: new Date(y, m, d - 5),
+              end: new Date(y, m, d - 2),
+              className: "event-red"
+            }, {
+              id: 999,
+              id: "event3",
+              title: "Repeating Event",
+              start: new Date(y, m, d - 3, 16, 0),
+              allDay: false,
+              className: "event-blue"
+            }, {
+              id: 999,
+              id: "event3",
+              title: "Repeating Event",
+              start: new Date(y, m, d + 4, 16, 0),
+              allDay: false,
+              className: "event-green"
+            }, {
+              id: "event4",
+              title: "Meeting",
+              start: new Date(y, m, d, 10, 30),
+              allDay: false,
+              className: "event-orange"
+            }, {
+              id: "event5",
+              title: "Lunch",
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false,
+              className: "event-red"
+            }, {
+              id: "event6",
+              title: "Birthday Party",
+              start: new Date(y, m, d + 1, 19, 0),
+              end: new Date(y, m, d + 1, 22, 30),
+              allDay: false,
+              className: "event-purple"
+            }
+          ]
+        });
+      
+      }).call(this);
+    </script>
+    <script>
+      $(".chat .new-message").live('submit', function(e) {
+        var chat, date, li, message, months, reply, scrollable, sender, timeago;
+        date = new Date();
+        months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        chat = $(this).parents(".chat");
+        message = $(this).find("#message_body").val();
+        $(this).find("#message_body").val("");
+        if (message.length !== 0) {
+          li = chat.find("li.message").first().clone();
+          li.find(".body").text(message);
+          timeago = li.find(".timeago");
+          timeago.removeClass("in");
+          var month = (date.getMonth() + 1);
+          var date_day = (date.getDate());
+          timeago.attr("title", "" + (date.getFullYear()) + "-" + (month<10 ? '0' : '') + month + "-" + (date_day<10 ? '0' : '' ) + date_day + " " + (date.getHours()) + ":" + (date.getMinutes()) + ":" + (date.getSeconds()) + " +0200");
+          timeago.text("" + months[date.getMonth()] + " " + (date.getDate()) + ", " + (date.getFullYear()) + " " + (date.getHours()) + ":" + (date.getMinutes()));
+          setTimeAgo(timeago);
+          sender = li.find(".name").text().trim();
+          chat.find("ul").append(li);
+          scrollable = li.parents(".scrollable");
+          $(scrollable).slimScroll({
+            scrollTo: scrollable.prop('scrollHeight') + "px"
+          });
+          li.effect("highlight", {}, 500);
+          reply = scrollable.find("li").not(":contains('" + sender + "')").first().clone();
+          setTimeout((function() {
+            date = new Date();
+            timeago = reply.find(".timeago");
+            timeago.attr("title", "" + (date.getFullYear()) + "-" + (month<10 ? '0' : '') + month + "-" + (date_day<10 ? '0' : '' ) + date_day + " " + (date.getHours()) + ":" + (date.getMinutes()) + ":" + (date.getSeconds()) + " +0200");
+            timeago.text("" + months[date.getMonth()] + " " + (date.getDate()) + ", " + (date.getFullYear()) + " " + (date.getHours()) + ":" + (date.getMinutes()));
+            setTimeAgo(timeago);
+            scrollable.find("ul").append(reply);
+            $(scrollable).slimScroll({
+              scrollTo: scrollable.prop('scrollHeight') + "px"
+            });
+            return reply.effect("highlight", {}, 500);
+          }), 1000);
+        }
+        return e.preventDefault();
+      });
+    </script>
+    <script>
+      $(".recent-activity .ok").live("click", function(e) {
+        $(this).tooltip("hide");
+        $(this).parents("li").fadeOut(500, function() {
+          return $(this).remove();
+        });
+        return e.preventDefault();
+      });
+      $(".recent-activity .remove").live("click", function(e) {
+        $(this).tooltip("hide");
+        $(this).parents("li").fadeOut(500, function() {
+          return $(this).remove();
+        });
+        return e.preventDefault();
+      });
+      $("#comments-more-activity").live("click", function(e) {
+        $(this).button("loading");
+        setTimeout((function() {
+          var list;
+          list = $("#comments-more-activity").parent().parent().find("ul");
+          list.append(list.find("li:not(:first)").clone().effect("highlight", {}, 500));
+          return $("#comments-more-activity").button("reset");
+        }), 1000);
+        e.preventDefault();
+        return false;
+      });
+      $("#users-more-activity").live("click", function(e) {
+        $(this).button("loading");
+        setTimeout((function() {
+          var list;
+          list = $("#users-more-activity").parent().parent().find("ul");
+          list.append(list.find("li:not(:first)").clone().effect("highlight", {}, 500));
+          return $("#users-more-activity").button("reset");
+        }), 1000);
+        e.preventDefault();
+        return false;
+      });
+    </script>
+    <script>
+      (function() {
+        $("#daterange").daterangepicker({
+          ranges: {
+            Yesterday: [moment().subtract("days", 1), moment().subtract("days", 1)],
+            "Last 30 Days": [moment().subtract("days", 29), moment()],
+            "This Month": [moment().startOf("month"), moment().endOf("month")]
+          },
+          startDate: moment().subtract("days", 29),
+          endDate: moment(),
+          opens: "left",
+          cancelClass: "btn-danger",
+          buttonClasses: ['btn', 'btn-sm']
+        }, function(start, end) {
+          return $("#daterange span").html(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
+        });
+      
+      }).call(this);
+    </script>
+    <script>
+      $(".todo-list .new-todo").live('submit', function(e) {
+        var li, todo_name;
+        todo_name = $(this).find("#todo_name").val();
+        $(this).find("#todo_name").val("");
+        if (todo_name.length !== 0) {
+          li = $(this).parents(".todo-list").find("li.item").first().clone();
+          li.find("input[type='checkbox']").attr("checked", false);
+          li.removeClass("important").removeClass("done");
+          li.find("label.todo span").text(todo_name);
+          $(".todo-list ul").first().prepend(li);
+          li.effect("highlight", {}, 500);
+        }
+        return e.preventDefault();
+      });
+      
+      $(".todo-list .actions .remove").live("click", function(e) {
+        $(this).tooltip("hide");
+        $(this).parents("li").fadeOut(500, function() {
+          return $(this).remove();
+        });
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+      });
+      
+      $(".todo-list .actions .important").live("click", function(e) {
+        $(this).parents("li").toggleClass("important");
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+      });
+      
+      $(".todo-list .check").live("click", function() {
+        var checkbox;
+        checkbox = $(this).find("input[type='checkbox']");
+        if (checkbox.is(":checked")) {
+          return $(this).parents("li").addClass("done");
+        } else {
+          return $(this).parents("li").removeClass("done");
+        }
+      });
+    </script>
+    <!-- / END - page related files and scripts [optional] -->
+  </body>
+</html>
